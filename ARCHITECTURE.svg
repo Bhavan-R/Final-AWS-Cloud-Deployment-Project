@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="640" viewBox="0 0 1100 640">
+<rect width="1100" height="640" fill="#f7f9fc"/>
+<text x="550" y="52" text-anchor="middle" font-family="Arial" font-size="30" font-weight="bold" fill="#172238">CloudTask — AWS Deployment Architecture</text>
+<rect x="60" y="240" width="210" height="140" rx="20" fill="#fff" stroke="#6e89ff" stroke-width="3"/>
+<text x="165" y="292" text-anchor="middle" font-family="Arial" font-size="22" fill="#172238">User Browser</text>
+<text x="165" y="328" text-anchor="middle" font-family="Arial" font-size="16" fill="#63748a">HTTPS/HTTP request</text>
+<path d="M270 310 L370 310" stroke="#4568f5" stroke-width="4" fill="none"/><path d="M360 300 L372 310 L360 320" fill="none" stroke="#4568f5" stroke-width="4"/>
+<rect x="380" y="190" width="330" height="240" rx="22" fill="#eaf0ff" stroke="#4568f5" stroke-width="3"/>
+<text x="545" y="230" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold" fill="#172238">Amazon EC2</text>
+<rect x="425" y="260" width="240" height="120" rx="14" fill="#fff" stroke="#91a8ff" stroke-width="2"/>
+<text x="545" y="305" text-anchor="middle" font-family="Arial" font-size="19" fill="#172238">Nginx Web Server</text>
+<text x="545" y="338" text-anchor="middle" font-family="Arial" font-size="16" fill="#63748a">HTML · CSS · JavaScript</text>
+<path d="M710 310 L805 310" stroke="#4568f5" stroke-width="4" fill="none"/><path d="M795 300 L807 310 L795 320" fill="none" stroke="#4568f5" stroke-width="4"/>
+<rect x="815" y="240" width="225" height="140" rx="20" fill="#fff" stroke="#f0a43c" stroke-width="3"/>
+<text x="927" y="295" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold" fill="#172238">Amazon S3</text>
+<text x="927" y="328" text-anchor="middle" font-family="Arial" font-size="16" fill="#63748a">Assets / backup files</text>
+<rect x="110" y="490" width="260" height="95" rx="18" fill="#fff" stroke="#20a477" stroke-width="3"/>
+<text x="240" y="532" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold" fill="#172238">AWS IAM</text>
+<text x="240" y="558" text-anchor="middle" font-family="Arial" font-size="16" fill="#63748a">Identity &amp; permissions</text>
+<path d="M240 490 L240 415 L380 415" stroke="#20a477" stroke-width="3" fill="none" stroke-dasharray="9 7"/>
+<rect x="730" y="490" width="300" height="95" rx="18" fill="#fff" stroke="#875de8" stroke-width="3"/>
+<text x="880" y="532" text-anchor="middle" font-family="Arial" font-size="22" font-weight="bold" fill="#172238">Amazon CloudWatch</text>
+<text x="880" y="558" text-anchor="middle" font-family="Arial" font-size="16" fill="#63748a">Metrics &amp; monitoring</text>
+<path d="M880 490 L880 430 L710 430" stroke="#875de8" stroke-width="3" fill="none" stroke-dasharray="9 7"/>
+<text x="550" y="615" text-anchor="middle" font-family="Arial" font-size="14" fill="#718096">S3, IAM and CloudWatch configurations must be completed and verified in your own AWS account.</text>
+</svg>

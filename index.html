@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cloud Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">☁</span><div><strong>CloudTask</strong><small>Student productivity workspace</small></div></div>
+      <span class="local-badge"><span class="dot"></span> Local demo</span>
+    </header>
+    <section class="welcome">
+      <p class="eyebrow">YOUR WORKSPACE</p>
+      <h1>Plan your day.<br><span>Make progress.</span></h1>
+      <p class="welcome-copy">Keep your tasks organized and move forward one step at a time.</p>
+    </section>
+    <section class="stats" aria-label="Task statistics">
+      <article class="stat-card"><span>Total tasks</span><strong id="totalCount">0</strong><div class="stat-note">All tasks</div></article>
+      <article class="stat-card"><span>Completed</span><strong id="completedCount">0</strong><div class="stat-note">Finished tasks</div></article>
+      <article class="stat-card"><span>Pending</span><strong id="pendingCount">0</strong><div class="stat-note">Still in progress</div></article>
+    </section>
+    <section class="content-grid">
+      <article class="panel add-panel">
+        <div class="panel-heading"><div><p class="eyebrow">QUICK CAPTURE</p><h2>Add a task</h2></div><span class="heading-icon">＋</span></div>
+        <form id="taskForm">
+          <label for="taskInput">Task name</label>
+          <input id="taskInput" maxlength="120" placeholder="e.g. Finish AWS deployment" required>
+          <label for="priorityInput">Priority</label>
+          <select id="priorityInput">
+            <option value="Medium">Medium</option><option value="High">High</option><option value="Low">Low</option>
+          </select>
+          <button class="primary-btn" type="submit">＋ Add task</button>
+        </form>
+        <p class="tiny-note">Tasks are saved in this browser using local storage.</p>
+      </article>
+      <article class="panel task-panel">
+        <div class="panel-heading"><div><p class="eyebrow">YOUR LIST</p><h2>Tasks</h2></div>
+          <select id="filterSelect" aria-label="Filter tasks"><option value="all">All tasks</option><option value="pending">Pending</option><option value="completed">Completed</option></select>
+        </div>
+        <ul id="taskList" class="task-list"></ul>
+        <div id="emptyState" class="empty-state"><div class="empty-icon">✓</div><h3>You're all caught up</h3><p>Add a task to get started.</p></div>
+      </article>
+    </section>
+    <footer><span>CloudTask · AWS deployment learning project</span><span>Demo application</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
